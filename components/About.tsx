@@ -2,10 +2,10 @@
 import { motion } from "motion/react";
 
 import {
-  Code2,
-  Zap,
-  GitBranch,
-  MessageSquare,
+    Code2,
+    Zap,
+    GitBranch,
+    MessageSquare,
 } from "lucide-react";
 
 import SectionBadge from "./SectionBadge";
@@ -17,8 +17,8 @@ interface AboutProps {
     divider: React.CSSProperties;
 }
 export default function About({
-  T,
-  divider,
+    T,
+    divider,
 }: AboutProps) {
     return (
         <>

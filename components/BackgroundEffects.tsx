@@ -27,17 +27,17 @@ export default function BackgroundEffects({
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden">
       <GradientOrb
-        className="w-[700px] h-[700px] -top-64 -left-48"
+        className="w-175 h-175 -top-64 -left-48"
         color={`rgba(99,102,241,${T.orbOp})`}
       />
 
       <GradientOrb
-        className="w-[600px] h-[600px] top-1/3 -right-48"
+        className="w-150 h-150 top-1/3 -right-48"
         color={`rgba(139,92,246,${T.orbOp})`}
       />
 
       <GradientOrb
-        className="w-[500px] h-[500px] bottom-1/4 left-1/3"
+        className="w-125 h-125 bottom-1/4 left-1/3"
         color={`rgba(34,211,238,${T.orbOp})`}
       />
 

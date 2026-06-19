@@ -15,35 +15,35 @@ import GradientText from "./GradientText";
 import { ThemeType } from "@/types/portfolio";
 
 interface ContactProps {
-  T: ThemeType;
-  divider: React.CSSProperties;
-  isDark: boolean;
+    T: ThemeType;
+    divider: React.CSSProperties;
+    isDark: boolean;
 
-  submitted: boolean;
-  formData: {
-    name: string;
-    email: string;
-    message: string;
-  };
+    submitted: boolean;
+    formData: {
+        name: string;
+        email: string;
+        message: string;
+    };
 
-  setFormData: React.Dispatch<
-    React.SetStateAction<{
-      name: string;
-      email: string;
-      message: string;
-    }>
-  >;
+    setFormData: React.Dispatch<
+        React.SetStateAction<{
+            name: string;
+            email: string;
+            message: string;
+        }>
+    >;
 
-  handleSubmit: (e: React.FormEvent) => void;
+    handleSubmit: (e: React.FormEvent) => void;
 }
 export default function Contact({
-  T,
-  divider,
-  isDark,
-  submitted,
-  formData,
-  setFormData,
-  handleSubmit,
+    T,
+    divider,
+    isDark,
+    submitted,
+    formData,
+    setFormData,
+    handleSubmit,
 }: ContactProps) {
     return (
         <>
@@ -62,10 +62,10 @@ export default function Contact({
                         {/* Info */}
                         <div className="md:col-span-2 space-y-3">
                             {[
-                                { icon: Mail, label: "Email", value: "pradeep.verma@email.com", href: "mailto:pradeep.verma@email.com" },
-                                { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/pradeepverma", href: "#" },
-                                { icon: Github, label: "Github", value: "github.com/pradeepverma", href: "#" },
-                                { icon: MapPin, label: "Location", value: "India · Remote Worldwide", href: undefined },
+                                { icon: Mail, label: "Email", value: "pradeep.222v@gmail.com", href: "mailto:pradeep.222v@gmail.com" },
+                                { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/pradeep-verma-7b1b63122", href: "https://www.linkedin.com/in/pradeep-verma-7b1b63122/" },
+                                { icon: Github, label: "Github", value: "github.com/Vermaryn", href: "https://github.com/Vermaryn" },
+                                { icon: MapPin, label: "Location", value: "Haridwar, India · Remote Worldwide", href: undefined },
                             ].map((item, i) => (
                                 <div
                                     key={i}

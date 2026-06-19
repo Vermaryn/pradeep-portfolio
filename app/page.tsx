@@ -64,9 +64,35 @@ export default function Home() {
     setMenuOpen(false);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async(e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    try{
+      const res= await fetch("/api/contact",{
+        method:"POST",
+        headers:{
+          "Content-Type": "application/json"
+        },
+        body:JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if(data.success){
+        setSubmitted(true);
+
+        setFormData({
+          name:"",
+          email:"",
+          message:"",
+        });
+      } else{
+        alert("Failed to send message")
+      }
+    } catch (error){
+      console.error(error);
+      alert("Something went wrong")
+    }
+    
   };
 
   const visibleLines = CODE_LINES.slice(Math.max(0, codeIdx - 4), codeIdx + 1);
