@@ -8,12 +8,14 @@ export interface Project {
   gradTo: string;
   accent: string;
 
-  problem: string;
-  solution: string;
+  github: string;
+  demo: string;
+
+  description: string;
 
   tech: string[];
   features: string[];
-  results: string[];
+  highlights: string[];
 }
 
 export interface ThemeType {

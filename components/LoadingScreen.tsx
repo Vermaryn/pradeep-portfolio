@@ -7,7 +7,7 @@ export default function LoadingScreen({ onDone }: { onDone: () => void }) {
 
   useEffect(() => {
     let start = 0;
-    const DURATION = 2400;
+    const DURATION = 400;
     const tick = (now: number) => {
       if (!start) start = now;
       const p = Math.min((now - start) / DURATION, 1);

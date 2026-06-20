@@ -12,6 +12,7 @@ import {
     Award,
     CheckCircle,
 } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import GradientText from "./GradientText";
 import { ThemeType } from "@/types/portfolio";
 interface HeroProps {
@@ -54,7 +55,7 @@ export default function Hero({
                                 style={{ background: `${T.card}`, border: `1px solid ${T.borderMd}`, color: T.fg4 }}
                             >
                                 <Calendar size={11} style={{ color: "#818cf8" }} />
-                                2+ Years Experience
+                                1+ Years Experience
                             </span>
                         </div>
 
@@ -79,13 +80,14 @@ export default function Hero({
                         <div className="flex flex-wrap gap-3 mb-10">
                             <button
                                 onClick={() => scrollTo("#work")}
-                                className="flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm text-white transition-all hover:scale-[1.03] active:scale-[0.98]"
+                                className="flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm text-white transition-all hover:scale-[1.03] active:scale-[0.98] cursor-pointer"
                                 style={{ background: "linear-gradient(135deg, #6366f1, #8b5cf6)", boxShadow: "0 4px 20px rgba(99,102,241,0.35)" }}
                             >
                                 View Projects <ArrowRight size={15} />
                             </button>
                             <a
-                                href="#"
+                                href="/resume/Pradeep_Web_Dev.pdf"
+                                target="_blank"
                                 className="flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all hover:scale-[1.03]"
                                 style={{ color: T.fg2, border: `1px solid ${T.borderLg}`, background: T.card }}
                             >
@@ -93,7 +95,7 @@ export default function Hero({
                             </a>
                             <button
                                 onClick={() => scrollTo("#contact")}
-                                className="flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all hover:scale-[1.03]"
+                                className="flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all hover:scale-[1.03] cursor-pointer"
                                 style={{ color: "#22d3ee", border: "1px solid rgba(34,211,238,0.2)", background: "rgba(34,211,238,0.05)" }}
                             >
                                 Contact Me
@@ -102,10 +104,14 @@ export default function Hero({
 
                         <div className="flex items-center gap-5">
                             {[
-                                { Icon: Github, href: "https://github.com" },
-                                { Icon: Linkedin, href: "https://linkedin.com" },
-                                { Icon: Twitter, href: "https://twitter.com" },
-                                { Icon: Mail, href: "mailto:pradeep.verma@email.com" },
+                                { Icon: Github, href: "https://github.com/Vermaryn" },
+                                { Icon: Linkedin, href: "https://www.linkedin.com/in/pradeep-verma-7b1b63122/" },
+                                { Icon: Twitter, href: "https://x.com/Pradeepver58490" },
+                                { Icon: Mail, href: "mailto:pradeep.222v@gmail.com" },
+                                {
+                                    Icon: FaWhatsapp,
+                                    href: "https://wa.me/918630275340",
+                                },
                             ].map(({ Icon, href }, i) => (
                                 <a
                                     key={i}
@@ -197,7 +203,7 @@ export default function Hero({
 
                         {/* Floating badges */}
                         {[
-                            { label: "25+ Projects", icon: <Award size={14} style={{ color: "#fbbf24" }} />, pos: "-left-8 top-[38%]" },
+                            { label: "10+ Projects", icon: <Award size={14} style={{ color: "#fbbf24" }} />, pos: "-left-8 top-[38%]" },
                             { label: "Available Now", icon: <CheckCircle size={14} style={{ color: "#34d399" }} />, pos: "-right-8 top-[70%]" },
                         ].map(({ label, icon, pos }) => (
                             <div

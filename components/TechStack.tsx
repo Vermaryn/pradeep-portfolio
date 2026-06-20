@@ -41,7 +41,7 @@ export default function TechStack({
                             Tools of the <GradientText>Trade</GradientText>
                         </h2>
                     </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-5">
                         {Object.entries(TECH_STACK).map(([category, items], ci) => {
                             const meta = CAT_META[ci];
                             return (

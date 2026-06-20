@@ -34,7 +34,7 @@ export default function Navbar({
                   <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
                     <button
                       onClick={() => scrollTo("#hero")}
-                      className="font-bold text-xl tracking-tight"
+                      className="font-bold text-xl tracking-tight cursor-pointer"
                       style={{ fontFamily: "'Outfit', sans-serif", color: T.fg }}
                     >
                       Pradeep<span style={{ color: "#818cf8" }}>.</span>
@@ -45,7 +45,7 @@ export default function Navbar({
                         <button
                           key={l.href}
                           onClick={() => scrollTo(l.href)}
-                          className="text-sm transition-colors duration-200"
+                          className="text-sm transition-colors duration-200 cursor-pointer"
                           style={{ color: T.fg4 }}
                           onMouseEnter={(e) => (e.currentTarget.style.color = T.fg)}
                           onMouseLeave={(e) => (e.currentTarget.style.color = T.fg4)}
@@ -59,7 +59,7 @@ export default function Navbar({
                       {/* Theme toggle */}
                       <button
                         onClick={() => setIsDark((v) => !v)}
-                        className="w-9 h-9 rounded-xl flex items-center justify-center transition-all"
+                        className="w-9 h-9 rounded-xl flex items-center justify-center transition-all cursor-pointer"
                         style={{ border: `1px solid ${T.border}`, background: T.card, color: T.fg4 }}
                         title={isDark ? "Switch to light mode" : "Switch to dark mode"}
                         onMouseEnter={(e) => (e.currentTarget.style.background = T.cardHov)}
@@ -69,7 +69,7 @@ export default function Navbar({
                       </button>
                       <button
                         onClick={() => scrollTo("#contact")}
-                        className="px-4 py-2 text-sm font-medium rounded-xl transition-all"
+                        className="px-4 py-2 text-sm font-medium rounded-xl transition-all cursor-pointer"
                         style={{ color: "#c7d2fe", border: "1px solid rgba(99,102,241,0.3)", background: "rgba(99,102,241,0.08)" }}
                         onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(99,102,241,0.18)")}
                         onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(99,102,241,0.08)")}
@@ -82,7 +82,7 @@ export default function Navbar({
                     <div className="flex md:hidden items-center gap-2">
                       <button
                         onClick={() => setIsDark((v) => !v)}
-                        className="w-9 h-9 rounded-xl flex items-center justify-center transition-all"
+                        className="w-9 h-9 rounded-xl flex items-center justify-center transition-all cursor-pointer"
                         style={{ border: `1px solid ${T.border}`, background: T.card, color: T.fg4 }}
                       >
                         {isDark ? <Sun size={15} /> : <Moon size={15} />}
@@ -90,6 +90,7 @@ export default function Navbar({
                       <button
                         onClick={() => setMenuOpen(!menuOpen)}
                         style={{ color: T.fg4 }}
+                        className="cursor-pointer"
                       >
                         {menuOpen ? <X size={22} /> : <Menu size={22} />}
                       </button>
@@ -105,7 +106,7 @@ export default function Navbar({
                         <button
                           key={l.href}
                           onClick={() => scrollTo(l.href)}
-                          className="text-left py-3 text-sm border-b"
+                          className="text-left py-3 text-sm border-b cursor-pointer"
                           style={{ color: T.fg3, borderColor: T.border }}
                         >
                           {l.label}
