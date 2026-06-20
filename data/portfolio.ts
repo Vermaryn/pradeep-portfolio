@@ -97,7 +97,6 @@ export const PROJECTS = [
       "MongoDB",
       "Cloudinary",
       "Tailwind CSS",
-      ,
       "JavaScript",
     ],
 
