@@ -305,7 +305,7 @@ export const TESTIMONIALS = [
     color: "#22d3ee",
   },
   {
-    name: "Ankit Saini",
+    name: "Ashutosh Gupta",
     role: "Business Owner",
     text: "Professional, reliable, and easy to work with. Pradeep delivered the required website improvements on time, maintained clear communication throughout the project, and ensured everything worked smoothly before delivery.",
     rating: 5,

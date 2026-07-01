@@ -55,7 +55,7 @@ export default function Hero({
                                 style={{ background: `${T.card}`, border: `1px solid ${T.borderMd}`, color: T.fg4 }}
                             >
                                 <Calendar size={11} style={{ color: "#818cf8" }} />
-                                1+ Years Experience
+                                2+ Years Experience
                             </span>
                         </div>
 

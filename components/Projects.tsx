@@ -51,10 +51,10 @@ export default function Projects({
               <button
                 key={p.id}
                 onClick={() => setActiveProject(i)}
-                className="px-4 py-2 rounded-xl text-sm font-medium transition-all"
+                className="px-4 py-2 rounded-xl text-sm font-medium transition-all cursor-pointer"
                 style={
                   activeProject === i
-                    ? { color: "#c7d2fe", border: "1px solid rgba(99,102,241,0.45)", background: "rgba(99,102,241,0.13)" }
+                    ? { color: T.fg, border: "1px solid rgba(99,102,241,0.45)", background: "rgba(99,102,241,0.13)" }
                     : { color: T.fg4, border: `1px solid ${T.border}`, background: T.card }
                 }
               >
@@ -107,7 +107,7 @@ export default function Projects({
                         <button
                           key={tab}
                           onClick={() => setTab(project.id, tab)}
-                          className="px-5 py-2.5 text-sm font-medium capitalize transition-all border-b-2 -mb-px"
+                          className="px-5 py-2.5 text-sm font-medium capitalize transition-all border-b-2 -mb-px cursor-pointer"
                           style={
                             getTab(project.id) === tab
                               ? { borderColor: project.accent, color: project.accent }
@@ -120,7 +120,7 @@ export default function Projects({
                     </div>
 
                     {getTab(project.id) === "overview" && (
-                      <div className="grid md:grid-cols-2 gap-10">
+                      <div className="grid md:grid-cols-2 gap-10 ">
                         <div>
                           <p className="text-xs font-mono uppercase tracking-wider mb-3" style={{ color: T.fg5 }}>Description</p>
                           <p className="leading-relaxed mb-7" style={{ color: T.fg3 }}>{project.description}</p>
